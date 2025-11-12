@@ -1,0 +1,168 @@
+/* 🌌 Tippmester AI 5.3 Vision–Fusion Edition */
+/* Globális stílus – neon zöld & sötétszürke arculat */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #2dfb7b;
+  --primary-dark: #24d56a;
+  --bg: #0f0f0f;
+  --bg-panel: #1a1a1a;
+  --text-light: #e8e8e8;
+  --text-dark: #000;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🌟 CHAT PANEL */
+
+.chat-panel {
+  background: var(--bg-panel);
+  color: var(--text-light);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 0 30px #2dfb7b33;
+  width: 100%;
+  max-width: 600px;
+  min-height: 540px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.title {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+/* ÜZENETABLAK */
+.chat-window {
+  height: 400px;
+  overflow-y: auto;
+  background: #111;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: inset 0 0 8px #000;
+}
+
+.msg {
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  width: fit-content;
+  max-width: 85%;
+  line-height: 1.4;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.msg.user {
+  background: var(--primary);
+  color: var(--text-dark);
+  margin-left: auto;
+  box-shadow: 0 0 12px #2dfb7b55;
+}
+
+.msg.mesterke {
+  background: #222;
+  border-left: 3px solid var(--primary);
+}
+
+/* ÜZENETBEVITEL */
+
+.chat-input {
+  display: flex;
+  gap: 6px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: none;
+  background: #2a2a2a;
+  color: var(--text-light);
+  outline: none;
+}
+
+.chat-input button {
+  background: var(--primary);
+  border: none;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.chat-input button:hover {
+  background: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+/* 📸 FOTÓ FELTÖLTÉS GOMB */
+
+.photo-upload {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.upload-btn {
+  cursor: pointer;
+  background: var(--primary);
+  color: var(--text-dark);
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  box-shadow: 0 0 14px #2dfb7b55;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.upload-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* 💫 ANIMÁCIÓK */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Görgetősáv sötét módra */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2dfb7b44;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2dfb7b77;
+}
