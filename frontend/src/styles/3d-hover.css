@@ -1,9 +1,0 @@
-.hover-3d {
-    transition: 0.35s ease;
-    transform-style: preserve-3d;
-}
-
-.hover-3d:hover {
-    transform: translateY(-6px) scale(1.05);
-    box-shadow: 0 12px 25px #0095ff55, inset 0 0 15px #0080ff88;
-}
