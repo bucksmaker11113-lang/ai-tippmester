@@ -1,0 +1,60 @@
+.hud-container {
+    background: #020b18;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.hud-title {
+    color: #00eaff;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.hud-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.holo-card {
+    position: relative;
+    width: 260px;
+    height: 160px;
+    background: rgba(0, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0,255,255,0.3);
+    transition: transform 0.3s ease;
+}
+
+.holo-card:hover {
+    transform: rotateY(8deg) rotateX(8deg) scale(1.06);
+}
+
+.holo-border {
+    position: absolute;
+    inset: 0;
+    border: 2px solid rgba(0,255,255,0.4);
+    border-radius: 14px;
+    box-shadow: 0 0 30px rgba(0,255,255,0.6);
+}
+
+.holo-inner {
+    padding: 20px;
+    color: #00eaff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.holo-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.holo-odds {
+    font-size: 18px;
+}
+
+.holo-strength {
+    margin-top: 6px;
+    font-size: 16px;
+}

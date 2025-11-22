@@ -1,0 +1,18 @@
+@keyframes glowPulse {
+    0% { box-shadow: 0 0 8px #007cff55; }
+    50% { box-shadow: 0 0 18px #00aaff; }
+    100% { box-shadow: 0 0 8px #007cff55; }
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(25px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hud-panel {
+    animation: slideIn 0.7s ease forwards;
+}
+
+.hud-glow {
+    animation: glowPulse 2.5s infinite;
+}
